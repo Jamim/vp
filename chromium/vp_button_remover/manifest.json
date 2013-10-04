@@ -1,0 +1,46 @@
+{
+ 	"manifest_version": 2,
+
+	"name": "VP Buttons Remover",
+	"description": "Расширение предназначено для удаления из игры «Война племён» злополучных кнопок, добавленых в версии 8.16",
+	"version": "0.1",
+
+	"icons": {
+		"16":  "icon16.png",
+		"48":  "icon48.png",
+          	"128": "icon128.png"
+	},
+
+	"content_scripts": [{
+		"matches": [
+			"http://ru1.voyna-plemyon.ru/*",
+			"http://ru2.voyna-plemyon.ru/*",
+			"http://ru3.voyna-plemyon.ru/*",
+			"http://ru4.voyna-plemyon.ru/*",
+			"http://ru5.voyna-plemyon.ru/*",
+			"http://ru6.voyna-plemyon.ru/*",
+			"http://ru7.voyna-plemyon.ru/*",
+			"http://ru8.voyna-plemyon.ru/*",
+			"http://ru9.voyna-plemyon.ru/*",
+			"http://ru10.voyna-plemyon.ru/*",
+			"http://ru11.voyna-plemyon.ru/*",
+			"http://ru12.voyna-plemyon.ru/*",
+			"http://ru13.voyna-plemyon.ru/*",
+			"http://ru14.voyna-plemyon.ru/*",
+			"http://ru15.voyna-plemyon.ru/*",
+			"http://ru16.voyna-plemyon.ru/*",
+			"http://ru17.voyna-plemyon.ru/*",
+			"http://ru18.voyna-plemyon.ru/*",
+			"http://ru19.voyna-plemyon.ru/*",
+			"http://ru20.voyna-plemyon.ru/*",
+			"http://ru21.voyna-plemyon.ru/*",
+			"http://ru22.voyna-plemyon.ru/*",
+			"http://ru23.voyna-plemyon.ru/*",
+			"http://ru24.voyna-plemyon.ru/*",
+			"http://ru25.voyna-plemyon.ru/*",
+			"http://ru26.voyna-plemyon.ru/*"
+		],
+		"run_at": "document_end",
+		"js": ["buttons_remover.js"]
+	}]
+}
